@@ -6,11 +6,11 @@ int B[100];
 BEGIN
 write("donner les element du 1er tableau")
 for i from 0 to MAX STEP 1 DO
-read (t1[i]);
+read (A[i]);
 write("donner les element du 2eme tableau")
 for j from 0 to MAX STEP 1 DO
-read (t1[j]);
-if (Lenght.t1=0 And lenght.t2=0)then TOTAL:=0;
+read (B[j]);
+if (Lenght.A=0 And lenght.B=0)then TOTAL:=0;
 ELSE MAX=lenght.t1
     for (int i = 0; i < max; i++) {
  

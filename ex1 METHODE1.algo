@@ -2,29 +2,29 @@ ALGORITHM checkpoint
 VAR
 tab t1[100];
 tab t2[100];
-MAX,i,j:integer;
+MAX,i,j,g,h:integer;
 total:INTEGER;
 BEGIN
 IF (Lenght.t1<lenght.t2) then (MAX=Lenght.t2 )else( MAX=Lenght.t1)
 total:=0;
-if (Lenght.t1=0 And lenght.t2=0)then TOTAL:=0;
-ELSE MAX=lenght.t1
-
-write("donner les element du 1er tableau")
+read("entrer le taille de tableau1");
+write(n1);
+read("entrer le taille de tableau2");
+write(n2);
 for i from 0 to MAX STEP 1 DO
 read (t1[i]);
 write("donner les element du 2eme tableau")
 for j from 0 to MAX STEP 1 DO
 read (t1[j]);
-for i from 0 to lenght.t1 STEP 1  DOD
-IF (t1[i]==[i+1]) then t1[i]=0;
-for j from 0 to lenght.t2 STEP 1  DOD
-IF (t2[i]==[i+1]) then t2[i]=0;
-FOR h FROM 0 TO MAX STEP 1  DO
-FOR z FROM 0 TO MAX STEP 1  DO
-    IF(t1[h]==t2[z]) then t1[h]=0 ;  
+FOR i FROM 0 TO n1  DO
+FOR j FROM 0 TO n2 STEP step  DO
+    if(t1[i]<>t2[j])then { total:=total+ t2[j];}
 END_FOR
 END_FOR
-FOR g FROM 0 TO max STEP step  DO
-total:=total+t1[g]+t2[g];
-END_FOR  
+FOR g FROM 0 TO n2  DO
+FOR h FROM 0 TO n1 STEP step  DO
+    if(t1[g]<>t2[h])then { total:=total +t2[h];}
+END_FOR
+END_FOR
+write(total);
+END
