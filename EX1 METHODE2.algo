@@ -1,0 +1,15 @@
+ALGORITHME EXERCICE 1
+VAR
+KEY,i:integer;
+BEGIN
+FOR key FROM 0 TO 100 STEP 1  DO
+    FOR value FROM 0 TO 100 STEP 1  DO
+        htab.insert(key,"Value");
+        Write(htab);
+    END_FOR
+END_FOR
+if htab.get(i)<>htab.get(i+1)
+then total=total+htab.get(i);
+end if
+write(htab)
+END

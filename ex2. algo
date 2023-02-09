@@ -1,0 +1,26 @@
+algorithme ex2
+VAR
+i,j,max;
+int A[100];
+int B[100];
+BEGIN
+write("donner les element du 1er tableau")
+for i from 0 to MAX STEP 1 DO
+read (t1[i]);
+write("donner les element du 2eme tableau")
+for j from 0 to MAX STEP 1 DO
+read (t1[j]);
+if (Lenght.t1=0 And lenght.t2=0)then TOTAL:=0;
+ELSE MAX=lenght.t1
+    for (int i = 0; i < max; i++) {
+ 
+        for (int j = 0; j < max; j++) {
+            if (A[i] == B[j]) {
+            }}}END_FOR
+print(A[i]);
+for i from 0 to lenght.t1 STEP 1  DOD
+IF (t1[i]==[i+1]) then t1[i]="*";
+end if;
+for j from 0 to lenght.t2 STEP 1  DOD
+IF (t2[i]==[i+1]) then t2[i]="*";
+end if ;

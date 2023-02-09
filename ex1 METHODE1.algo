@@ -1,0 +1,30 @@
+ALGORITHM checkpoint
+VAR
+tab t1[100];
+tab t2[100];
+MAX,i,j:integer;
+total:INTEGER;
+BEGIN
+IF (Lenght.t1<lenght.t2) then (MAX=Lenght.t2 )else( MAX=Lenght.t1)
+total:=0;
+if (Lenght.t1=0 And lenght.t2=0)then TOTAL:=0;
+ELSE MAX=lenght.t1
+
+write("donner les element du 1er tableau")
+for i from 0 to MAX STEP 1 DO
+read (t1[i]);
+write("donner les element du 2eme tableau")
+for j from 0 to MAX STEP 1 DO
+read (t1[j]);
+for i from 0 to lenght.t1 STEP 1  DOD
+IF (t1[i]==[i+1]) then t1[i]=0;
+for j from 0 to lenght.t2 STEP 1  DOD
+IF (t2[i]==[i+1]) then t2[i]=0;
+FOR h FROM 0 TO MAX STEP 1  DO
+FOR z FROM 0 TO MAX STEP 1  DO
+    IF(t1[h]==t2[z]) then t1[h]=0 ;  
+END_FOR
+END_FOR
+FOR g FROM 0 TO max STEP step  DO
+total:=total+t1[g]+t2[g];
+END_FOR  
